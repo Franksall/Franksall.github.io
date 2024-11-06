@@ -1,0 +1,104 @@
+/* Estilo global */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f3f4f6;
+    color: #333;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px;
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+}
+
+/* Encabezados */
+h1 {
+    text-align: center;
+    color: #1d4ed8;
+    font-size: 28px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    color: #1e3a8a;
+    font-size: 20px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+/* Formulario */
+form {
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+textarea, input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+    border: 1px solid #d1d5db;
+    border-radius: 4px;
+    resize: vertical;
+    font-size: 14px;
+}
+
+/* Botones */
+button {
+    background-color: #2563eb;
+    color: #ffffff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-top: 10px;
+}
+
+button:hover {
+    background-color: #1e40af;
+}
+
+#download_compressed {
+    display: none;
+    background-color: #10b981;
+    margin-top: 5px;
+}
+
+#download_compressed:hover {
+    background-color: #059669;
+}
+
+/* Resultados */
+pre {
+    background-color: #f9fafb;
+    padding: 10px;
+    border-radius: 4px;
+    border: 1px solid #e5e7eb;
+    font-size: 14px;
+    overflow-x: auto;
+    max-height: 200px;
+}
+
+/* Mensaje de éxito */
+.message {
+    text-align: center;
+    margin-top: 20px;
+    color: #059669;
+}
